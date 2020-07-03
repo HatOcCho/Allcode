@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"gpioa\startup_stm32f103xb.o"
+"gpioa\stm32f1xx_it.o"
+"gpioa\main.o"
+"gpioa\stm32f1xx_hal_msp.o"
+"gpioa\my_nrf24.o"
+"gpioa\sd_hal_mpu6050.o"
+"gpioa\system_stm32f1xx.o"
+"gpioa\stm32f1xx_hal_rcc.o"
+"gpioa\stm32f1xx_hal.o"
+"gpioa\stm32f1xx_hal_gpio.o"
+"gpioa\stm32f1xx_hal_pwr.o"
+"gpioa\stm32f1xx_hal_rcc_ex.o"
+"gpioa\stm32f1xx_hal_flash_ex.o"
+"gpioa\stm32f1xx_hal_tim.o"
+"gpioa\stm32f1xx_hal_flash.o"
+"gpioa\stm32f1xx_hal_gpio_ex.o"
+"gpioa\stm32f1xx_hal_dma.o"
+"gpioa\stm32f1xx_hal_cortex.o"
+"gpioa\stm32f1xx_hal_tim_ex.o"
+"gpioa\stm32f1xx_hal_spi.o"
+"gpioa\stm32f1xx_hal_spi_ex.o"
+"gpioa\stm32f1xx_hal_uart.o"
+"gpioa\stm32f1xx_hal_i2c.o"
+--library_type=microlib --strict --scatter "GPIOA\GPIOA.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIOA.map" -o GPIOA\GPIOA.axf
